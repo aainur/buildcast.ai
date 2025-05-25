@@ -5,6 +5,9 @@
   "installCommand": "npm install",
   "functions": {
     "app/api/generate/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/generate-audio/route.ts": {
       "maxDuration": 60
     }
   },
@@ -32,5 +35,6 @@
       "source": "/api/mock-audio",
       "destination": "/api/mock-audio"
     }
-  ]
+  ],
+  "regions": ["iad1"]
 } 

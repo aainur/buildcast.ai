@@ -3,6 +3,7 @@ import { processWithClaude } from '@/lib/ai';
 import { extractTextFromImage } from '@/lib/ocr';
 import { getFileTypeCategory } from '@/lib/utils';
 import { LearningContent } from '@/lib/types';
+import { validateEnvironment } from '@/lib/env';
 
 // Configure for file uploads
 export const runtime = 'nodejs';
@@ -41,6 +42,20 @@ async function extractTextFromFile(file: File): Promise<string> {
 
 export async function POST(request: NextRequest) {
   try {
+    // Validate environment first
+    const envValidation = validateEnvironment();
+    if (!envValidation.isValid) {
+      console.error('Environment validation failed:', envValidation.summary);
+      return NextResponse.json(
+        { 
+          success: false, 
+          error: 'Server configuration error: ' + envValidation.summary,
+          debug: envValidation
+        },
+        { status: 500 }
+      );
+    }
+
     // Parse the form data
     const formData = await request.formData();
     const file = formData.get('file') as File;
