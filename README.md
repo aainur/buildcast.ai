@@ -1,12 +1,13 @@
 # Buildcast.ai
 
-Fork this repository and build nFactorial Ai Cup 2025 projects
+Build for nFactorial Ai Cup 2025
 
 **Ainur Aman**
 
-**Buildcast.ai - AI-Powered Learning Assistant**
-
+**Buildcast.ai - AI-Powered Fast Learning and Revising Assistant**
 Transform any material into efficient learning content with AI-powered extraction, audio summaries, and interactive flashcards. Built with Next.js 14, TypeScript, Claude 3 Haiku, and ElevenLabs for the nFactorial AI Cup 2025.
+
+If you promised to read that material before a meeting or exam and now need to review it in minutes, this app is for you.
 
 ## ✨ Check the app
 
@@ -18,7 +19,7 @@ https://buildcast-ai.vercel.app/
 - **Audio Summaries**: Generate natural-sounding audio summaries using ElevenLabs text-to-speech
 - **Interactive Flashcards**: AI-generated Q&A flashcards for effective learning
 - **OCR Support**: Extract text from images using Tesseract.js
-- **Mobile-Responsive**: Optimized for all devices with modern UI/UX
+- **Mobile**: Optimized for all devices with modern UI/UX
 - **Real-time Processing**: Live progress tracking and error handling
 
 ## 🛠 Tech Stack
@@ -31,6 +32,25 @@ https://buildcast-ai.vercel.app/
 - **OCR**: Tesseract.js
 - **File Processing**: PDF-parse for PDF text extraction
 - **Deployment**: Vercel
+
+## Prompt Chaining Architecture
+graph TD
+  A[File Upload] --> B[Text Extraction Agent]
+  B --> C[Claude Analysis Agent]
+  C --> D[Content Structuring Agent]
+  D --> E[Audio Generation Agent]
+  E --> F[Response Assembly Agent]
+
+## How Anthropic’s Principles Influenced the Architecture
+
+- ** Helpfulness**:
+The agent doesn’t just answer questions — it gives a complete picture of the material. It highlights key terms and concepts, explains the core ideas, and helps the user quickly get back into context or fully understand the topic from scratch.
+
+- ** Honesty **:
+Claude only receives a limited context: the exact text uploaded by the user. Prompt instructions are strictly controlled, so all output is fully grounded in the input. The model has no access to the internet or external data — it works only with what the user provides.
+
+- ** Harmlessness **:
+The agent restricts the model’s scope to prevent it from going beyond educational purposes. All outputs are focused solely on safe, structured, and study-related content.
 
 ## 🚀 Quick Start
 
@@ -154,7 +174,7 @@ This project was built for the nFactorial AI Cup 2025, demonstrating:
 - Multimodal AI interaction (text, image, audio)
 - Real-world problem solving (efficient learning)
 - Production-ready architecture
-- Modern web development practices
+- Modern development practices
 
 ---
 
