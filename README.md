@@ -2,7 +2,7 @@
 
 Fork this repository and build nFactorial Ai Cup 2025 projects
 
-**Ainur Seidakhmet**
+**Ainur Aman**
 
 **Buildcast.ai - AI-Powered Learning Assistant**
 
