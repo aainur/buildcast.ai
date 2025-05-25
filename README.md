@@ -8,6 +8,10 @@ Fork this repository and build nFactorial Ai Cup 2025 projects
 
 Transform any material into efficient learning content with AI-powered extraction, audio summaries, and interactive flashcards. Built with Next.js 14, TypeScript, Claude 3 Haiku, and ElevenLabs for the nFactorial AI Cup 2025.
 
+## ✨ Check the app
+
+https://buildcast-ai.vercel.app/
+
 ## 🎯 Features
 
 - **Smart Content Extraction**: Upload text files, PDFs, or images and extract key concepts using Claude 3 Haiku
@@ -138,77 +142,7 @@ buildcast.ai/
 
 ## 🚀 Deployment
 
-### Deploy to Vercel
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-
-2. **Connect to Vercel**
-   - Visit [Vercel](https://vercel.com/)
-   - Import your GitHub repository
-   - Configure environment variables in Vercel dashboard
-
-3. **Environment Variables in Vercel**
-   Add these in your Vercel project settings:
-   - `ANTHROPIC_API_KEY`
-   - `ANTHROPIC_API_VERSION`
-   - `ELEVENLABS_API_KEY`
-
-4. **Deploy**
-   Vercel will automatically deploy on every push to main branch
-
-### Manual Deployment
-
-```bash
-# Build the application
-npm run build
-
-# Start production server
-npm start
-```
-
-## 🔒 Environment Variables
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `ANTHROPIC_API_KEY` | Yes | Claude 3 Haiku API key for content processing |
-| `ANTHROPIC_API_VERSION` | No | API version (defaults to 2023-06-01) |
-| `ELEVENLABS_API_KEY` | No | ElevenLabs API key for audio generation |
-| `NODE_ENV` | No | Environment (development/production) |
-| `NEXT_PUBLIC_APP_URL` | No | App URL for metadata |
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **"ANTHROPIC_API_KEY is not configured"**
-   - Ensure you've added your Anthropic API key to `.env.local`
-   - Restart the development server after adding environment variables
-
-2. **PDF processing fails**
-   - Ensure the PDF contains readable text (not scanned images)
-   - Try with a different PDF file
-
-3. **OCR not working**
-   - Ensure images contain clear, readable text
-   - Supported formats: .jpg, .jpeg, .png
-   - Maximum file size: 5MB for images
-
-4. **Audio not playing**
-   - Check if ElevenLabs API key is configured
-   - Audio generation is optional and app works without it
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Deployed to Vercel and available at https://buildcast-ai.vercel.app/
 
 ## 📄 License
 
@@ -221,10 +155,6 @@ This project was built for the nFactorial AI Cup 2025, demonstrating:
 - Real-world problem solving (efficient learning)
 - Production-ready architecture
 - Modern web development practices
-
-## 📞 Support
-
-For support, email [your-email@example.com] or create an issue in the GitHub repository.
 
 ---
 
