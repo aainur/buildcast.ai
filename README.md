@@ -1,11 +1,7 @@
 # Buildcast.ai
 
-Build for nFactorial Ai Cup 2025
-
-**Ainur Aman**
-
 **Buildcast.ai - AI-Powered Fast Learning and Revising Assistant**
-Transform any material into efficient learning content with AI-powered extraction, audio summaries, and interactive flashcards. Built with Next.js 14, TypeScript, Claude 3 Haiku, and ElevenLabs for the nFactorial AI Cup 2025.
+Transform any material into efficient learning content with AI-powered extraction, audio summaries, and interactive flashcards. Built with Next.js 14, TypeScript, Claude 3 Haiku, and ElevenLabs.
 
 If you promised to read that material before a meeting or exam and now need to review it in minutes or listen to it on the go - this app is for you 📚⏱️🎧
 
@@ -168,14 +164,9 @@ buildcast.ai/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🏆 nFactorial AI Cup 2025
-
-This project was built for the nFactorial AI Cup 2025, demonstrating:
+This project demonstrates:
 - Multimodal AI interaction (text, image, audio)
-- Real-world problem solving (efficient learning)
+- Problem solving (efficient learning)
 - Production-ready architecture
 - Modern development practices
 
----
-
-**Built with ❤️ for nFactorial AI Cup 2025** 
